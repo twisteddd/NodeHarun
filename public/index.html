@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dnevnik Raspoloženja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Dnevnik Raspoloženja</h1>
+    <form id="moodForm">
+      <label for="mood">Kako se osjećaš?</label>
+      <select id="mood">
+        <option value="Srećan 😊">Srećan 😊</option>
+        <option value="Tužan 😢">Tužan 😢</option>
+        <option value="Umoran 😴">Umoran 😴</option>
+        <option value="Besan 😡">Bijesan 😡</option>
+        <option value="Zbunjen 🤔">Zbunjen 🤔</option>
+      </select>
+      <input type="text" id="note" placeholder="Kratka bilješka..." />
+      <button type="submit">Dodaj</button>
+    </form>
+
+    <h2>Zabilježeni unosi:</h2>
+    <div id="entries"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
